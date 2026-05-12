@@ -23,18 +23,23 @@ body {
 header {
     background-color: hsl(216, 65%, 11%);
     width: 100%;
-    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 10px;
+    
 }
 
 .navv {
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 0 5%;
 
@@ -49,9 +54,10 @@ header {
 .navv a {
     color: #fff;
     text-decoration: none;
-    margin-left: 25px;
     font-weight: 500;
     transition: color 0.3s;
+    font-size: 14px;
+    margin: 5px;
 }
 
 .navv a:hover {
@@ -342,12 +348,14 @@ h3 {
 }
 
 .form-container {
-    max-width: 90%;
+    max-width: 500px;
+    width: 95%;
     margin: 0 auto;
     background: #ffffff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 
 .property-form {
@@ -378,6 +386,8 @@ h3 {
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s;
+    width: 100% !important;
+    box-sizing: border-box;
 }
 
 .form-group input:focus {
@@ -442,4 +452,8 @@ h3 {
         min-width: 100%;
         text-align: center;
     }
+}
+input[type="text"], input[type="number"], select, textarea {
+    width: 100% !important;
+    box-sizing: border-box;
 }
