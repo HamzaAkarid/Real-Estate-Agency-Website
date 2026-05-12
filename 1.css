@@ -24,7 +24,7 @@ header {
 }
 
 .navv {
-    max-width: 1500px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -75,7 +75,8 @@ header {
 
 .section1-contenue p {
     max-width: 800px;
-    margin: 0 auto 10px;
+    width: 90%;
+    margin: 0 auto 1.5rem;
     font-size: 1.1rem;
 }
 
@@ -167,7 +168,8 @@ ul li {
 }
 
 .catatlogue {
-    max-width: 1200px;
+    max-width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -332,7 +334,7 @@ h3 {
 }
 
 .form-container {
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
     background: #ffffff;
     padding: 40px;
@@ -425,4 +427,11 @@ h3 {
 
 .map-container iframe {
     display: block; 
+}
+
+@media (max-width: 600px) {
+    .footer-box {
+        min-width: 100%;
+        text-align: center;
+    }
 }
