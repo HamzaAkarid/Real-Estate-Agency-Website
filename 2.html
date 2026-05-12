@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>Appartements</title>
+</head>
+<body>
+    <header>
+        <nav class="navv">
+            <h1>New House</h1>
+            <div class="nav-links">
+                <a href="1.html">Home</a>
+                <a href="2.html">Apartments</a>
+                <a href="3.html">Buildings</a>
+                <a href="4.html">Lands</a>
+                <a href="5.html">Services</a>
+                <a href="6.html">Contacts & Informations</a>
+            </div>
+        </nav>
+    </header>
+    <section class="section1">
+        <div class="section1-contenue">
+            <h1>Apartments</h1>
+            <p>Discover our wide range of apartments for sale and rent. Whether you are looking for a cozy studio or a spacious family apartment, we have something for everyone.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+    <div class="catatlogue">
+        <h2>Featured Apartments</h2>
+        
+        <input type="radio" name="cat-filter" id="luxury-radio">
+        <input type="radio" name="cat-filter" id="cozy-radio">
+        <input type="radio" name="cat-filter" id="spacious-radio">
+        <input type="radio" name="cat-filter" id="affordable-radio">
+        
+        
+        <div class="card-selectors">
+            <label for="luxury-radio" class="selection-card"><strong>Luxury Apartments:</strong> We provide high-end, luxurious living spaces.</label>
+            <label for="cozy-radio" class="selection-card"><strong>Cozy Suburban:</strong> Apartments offer a peaceful retreat in the suburbs.</label>
+            <label for="spacious-radio" class="selection-card"><strong>Spacious Family Apartments:</strong> Are perfect for growing families.</label>
+            <label for="affordable-radio" class="selection-card"><strong>Affordable City Apartments:</strong> Provide great value in the heart of the city.</label>
+        </div>
+
+        <div class="display-area">
+            <div class="catalogue-item luxury-cat">
+                <iframe src="luxury-list.html"></iframe>
+            </div>
+            <div class="catalogue-item cozy-cat">
+                <iframe src="cozy-list.html"></iframe>
+            </div>
+            <div class="catalogue-item spacious-cat">
+                <iframe src="spacious-list.html"></iframe>
+            </div>
+            <div class="catalogue-item affordable-cat">
+                <iframe src="affordable-list.html"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="more">
+    <div class="more-contenue">
+        <h2>More Apartments</h2>
+        <h3>Call US : <a href="tel:+1234567890">+1234567890</a></h3>
+    </div>
+</section>
+<section class="submission-section">
+    <div class="form-container">
+        <h3>Rent or Sell Your Apartment</h3>
+        <p style="text-align: center; margin-bottom: 25px;">Connect with thousands of buyers and tenants in Casablanca.</p>
+        
+        <form class="property-form">
+            <div class="form-group">
+                <label for="a-name">Apartment Title</label>
+                <input type="text" id="a-name" placeholder="e.g. Luxury 2-Bedroom Studio" required>
+            </div>
+            <div class="form-group">
+                <label for="a-price">Monthly Rent / Sale Price (DH)</label>
+                <input type="number" id="a-price" placeholder="e.g. 8,500" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="a-loc">Address</label>
+                <input type="text" id="a-loc" placeholder="Floor number and building location" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="a-pics">Upload Gallery</label>
+                <div class="file-upload">
+                    <input type="file" id="a-pics" accept="image/*" multiple>
+                    <p>Upload living room, bedroom, and balcony photos</p>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">List Apartment Now</button>
+        </form>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>New House Agency</h3>
+            <p>Your premier partner for real estate and construction in Casablanca. From luxury penthouses to strategic land investments, we build your future.</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="1.html">Home</a></li>
+                <li><a href="2.html">Apartments</a></li>
+                <li><a href="4.html">Land for Sale</a></li>
+                <li><a href="5.html">Our Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h4>Contact Us</h4>
+            <p>📍 123 Boulevard d'Anfa, Casablanca</p>
+            <p>📞 +212 522 00 00 00</p>
+            <p>📧 contact@newhouseagency.ma</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Opening Hours</h4>
+            <table class="footer-table">
+                <tr>
+                    <td>Mon - Fri:</td>
+                    <td>09:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday:</td>
+                    <td>09:00 - 13:00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 New House Agency. All rights reserved. Designed for EMSI Engineering Project.</p>
+    </div>
+</footer>
+</body>
+</html>
